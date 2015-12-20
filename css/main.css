@@ -1,22 +1,37 @@
+body {
+/*  background-image: url("/img/bg13.gif");*/
+}
 
+.albumNodes {
+  display: flex;
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.cover_thumb {
+  height: 172px;
+  width: 172px;
+}
 
+.thumbnail {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
+.thumbnail p {
+  text-align: center;
+}
 
+.thumbnail img {
+  border: 3px #000 solid;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.jumbotron {
+    /* add bootstrap jumbotron background image */
+    background-color: #df6500;
+    background-image: url("/img/jumbotron_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    /* change bootstrap jumbotron text color */
+    color: #FFF;
+}

@@ -1,9 +1,15 @@
 body {
 /*  background-image: url("/img/bg13.gif");*/
+  padding-top: none;
 }
 
 .albumNodes {
   display: flex;
+}
+
+.album_image {
+  height: 300px;
+  width: 300px;
 }
 
 .cover_thumb {

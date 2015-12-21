@@ -88,6 +88,7 @@ var AlbumModal = React.createClass({
               <div className="row">
                 <div className="col-md-6">
                   <img src={this.props.album.albumImage} alt={this.props.album.albumTitle} className='album_image'/>
+                  <p clasName="text-center"><a href={this.props.album.albumDownloadUrl} className="btn btn-primary" role="button">Download Album</a></p>
                 </div>
                 <div className="col-md-6">
                   <ol>
@@ -113,37 +114,39 @@ var data = [
     id: 2015, 
     albumImage: "/xmas/albums/2015/cover.jpg", 
     albumTitle: "#18: Xmas Card 2015: JOY!",
+    albumDownloadUrl: "/mp3s/xmas/xmas_2015/2015.zip",
     songs: [
-      {songTitle:"Alone on Christmas Day [feat. Jason Schwartzmann]",songArtist:"Phoenix",songDuration:"2:55",songUrl:".s3.amazonaws.com/xmas/albums/2015/01%20Alone%20on%20Christmas%20Day%20%5Bfeat.%20Jason%20Schwartzmann%5D.mp3"},
-      {songTitle:"Disco Claus",songArtist:"The Bionic I",songDuration:"3:47",songUrl:".s3.amazonaws.com/xmas/albums/2015/02%20Disco%20Claus.mp3"},
-      {songTitle:"Joy To The World",songArtist:"Chet Baker",songDuration:"2:45",songUrl:".s3.amazonaws.com/xmas/albums/2015/03%20Joy%20To%20The%20World.mp3"},
-      {songTitle:"West Indies Carol",songArtist:"Chicago Bronze",songDuration:"1:59",songUrl:".s3.amazonaws.com/xmas/albums/2015/04%20West%20Indies%20Carol.mp3"},
-      {songTitle:"Christmas Is Just Around The Corner (From \"Cranberry Christmas\")",songArtist:"Barry Manilow",songDuration:"2:54",songUrl:".s3.amazonaws.com/xmas/albums/2015/05%20Christmas%20Is%20Just%20Around%20The%20Corner%20(From%20_Cranberry%20Christmas_).mp3"},
-      {songTitle:"Cool Yule",songArtist:"Louis Armstrong & The Commanders",songDuration:"2:58",songUrl:".s3.amazonaws.com/xmas/albums/2015/06%20Cool%20Yule.mp3"},
-      {songTitle:"Oh It's Christmas",songArtist:"The Rosebuds",songDuration:"3:02",songUrl:".s3.amazonaws.com/xmas/albums/2015/07%20Oh%20It's%20Christmas.mp3"},
-      {songTitle:"Don't Believe in Christmas",songArtist:"The Sonics",songDuration:"1:48",songUrl:".s3.amazonaws.com/xmas/albums/2015/08%20Don't%20Believe%20in%20Christmas.mp3"},
-      {songTitle:"I Want a Present for Christmas (The Complete 1949)",songArtist:"Tiny Grimes",songDuration:"2:35",songUrl:".s3.amazonaws.com/xmas/albums/2015/09%20I%20Want%20a%20Present%20for%20Christmas%20(The%20Complete%201949).mp3"},
-      {songTitle:"Santa Tell Me",songArtist:"Ariana Grande",songDuration:"3:24",songUrl:".s3.amazonaws.com/xmas/albums/2015/10%20Santa%20Tell%20Me.mp3"},
-      {songTitle:"Baby It's Christmas",songArtist:"Bananarama",songDuration:"3:35",songUrl:".s3.amazonaws.com/xmas/albums/2015/11%20Baby%20It's%20Christmas.mp3"},
-      {songTitle:"Wonderful Christmastime",songArtist:"Cassie Ramone",songDuration:"3:16",songUrl:".s3.amazonaws.com/xmas/albums/2015/12%20Wonderful%20Christmastime.mp3"},
-      {songTitle:"Old Toy Trains",songArtist:"Dtcv",songDuration:"2:00",songUrl:".s3.amazonaws.com/xmas/albums/2015/13%20Old%20Toy%20Trains.mp3"},
-      {songTitle:"Nutcracker March",songArtist:"Gabriel Staznik",songDuration:"2:46",songUrl:".s3.amazonaws.com/xmas/albums/2015/14%20Nutcracker%20March.mp3"},
-      {songTitle:"White Christmas (Dubstep Remix)",songArtist:"Iggy Pop",songDuration:"4:44",songUrl:".s3.amazonaws.com/xmas/albums/2015/15%20White%20Christmas%20(Dubstep%20Remix).mp3"},
-      {songTitle:"You Wont Have to Wait Till Xmas",songArtist:"Lee Rogers",songDuration:"2:28",songUrl:".s3.amazonaws.com/xmas/albums/2015/16%20You%20Wont%20Have%20to%20Wait%20Till%20Xmas.mp3"},
-      {songTitle:"When Christmas Comes",songArtist:"Los Campesinos!",songDuration:"3:51",songUrl:".s3.amazonaws.com/xmas/albums/2015/17%20When%20Christmas%20Comes.mp3"},
-      {songTitle:"Jingle Bells (Feat. The Puppini Sisters)",songArtist:"Michael Bublé",songDuration:"2:40",songUrl:".s3.amazonaws.com/xmas/albums/2015/18%20Jingle%20Bells%20(Feat.%20The%20Puppini%20Sisters).mp3"},
-      {songTitle:"The Christmas Song",songArtist:"PHOX",songDuration:"2:54",songUrl:".s3.amazonaws.com/xmas/albums/2015/19%20The%20Christmas%20Song.mp3"},
-      {songTitle:"8 Days of Hannukah",songArtist:"Sharon Jones & The Dap-Kings",songDuration:"3:43",songUrl:".s3.amazonaws.com/xmas/albums/2015/20%208%20Days%20of%20Hannukah.mp3"},
-      {songTitle:"Someday At Christmas",songArtist:"Stevie Wonder",songDuration:"2:49",songUrl:".s3.amazonaws.com/xmas/albums/2015/21%20Someday%20At%20Christmas.mp3"},
-      {songTitle:"I Don't Wanna Wait Til Christmas",songArtist:"Summer Camp",songDuration:"3:14",songUrl:".s3.amazonaws.com/xmas/albums/2015/22%20I%20Don't%20Wanna%20Wait%20Til%20Christmas.mp3"},
-      {songTitle:"Il Est Ne",songArtist:"Tom Tom Club",songDuration:"4:00",songUrl:".s3.amazonaws.com/xmas/albums/2015/23%20Il%20Est%20Ne.mp3"},
-      {songTitle:"Little Drummer Boy",songArtist:"Louis Bellson",songDuration:"6:37",songUrl:".s3.amazonaws.com/xmas/albums/2015/24%20Little%20Drummer%20Boy.mp3"}
+      {songTitle:"Alone on Christmas Day [feat. Jason Schwartzmann]",songArtist:"Phoenix",songDuration:"2:55",songUrl:"/xmas/albums/2015/01%20Alone%20on%20Christmas%20Day%20%5Bfeat.%20Jason%20Schwartzmann%5D.mp3"},
+      {songTitle:"Disco Claus",songArtist:"The Bionic I",songDuration:"3:47",songUrl:"/xmas/albums/2015/02%20Disco%20Claus.mp3"},
+      {songTitle:"Joy To The World",songArtist:"Chet Baker",songDuration:"2:45",songUrl:"/xmas/albums/2015/03%20Joy%20To%20The%20World.mp3"},
+      {songTitle:"West Indies Carol",songArtist:"Chicago Bronze",songDuration:"1:59",songUrl:"/xmas/albums/2015/04%20West%20Indies%20Carol.mp3"},
+      {songTitle:"Christmas Is Just Around The Corner (From \"Cranberry Christmas\")",songArtist:"Barry Manilow",songDuration:"2:54",songUrl:"/xmas/albums/2015/05%20Christmas%20Is%20Just%20Around%20The%20Corner%20(From%20_Cranberry%20Christmas_).mp3"},
+      {songTitle:"Cool Yule",songArtist:"Louis Armstrong & The Commanders",songDuration:"2:58",songUrl:"/xmas/albums/2015/06%20Cool%20Yule.mp3"},
+      {songTitle:"Oh It's Christmas",songArtist:"The Rosebuds",songDuration:"3:02",songUrl:"/xmas/albums/2015/07%20Oh%20It's%20Christmas.mp3"},
+      {songTitle:"Don't Believe in Christmas",songArtist:"The Sonics",songDuration:"1:48",songUrl:"/xmas/albums/2015/08%20Don't%20Believe%20in%20Christmas.mp3"},
+      {songTitle:"I Want a Present for Christmas (The Complete 1949)",songArtist:"Tiny Grimes",songDuration:"2:35",songUrl:"/xmas/albums/2015/09%20I%20Want%20a%20Present%20for%20Christmas%20(The%20Complete%201949).mp3"},
+      {songTitle:"Santa Tell Me",songArtist:"Ariana Grande",songDuration:"3:24",songUrl:"/xmas/albums/2015/10%20Santa%20Tell%20Me.mp3"},
+      {songTitle:"Baby It's Christmas",songArtist:"Bananarama",songDuration:"3:35",songUrl:"/xmas/albums/2015/11%20Baby%20It's%20Christmas.mp3"},
+      {songTitle:"Wonderful Christmastime",songArtist:"Cassie Ramone",songDuration:"3:16",songUrl:"/xmas/albums/2015/12%20Wonderful%20Christmastime.mp3"},
+      {songTitle:"Old Toy Trains",songArtist:"Dtcv",songDuration:"2:00",songUrl:"/xmas/albums/2015/13%20Old%20Toy%20Trains.mp3"},
+      {songTitle:"Nutcracker March",songArtist:"Gabriel Staznik",songDuration:"2:46",songUrl:"/xmas/albums/2015/14%20Nutcracker%20March.mp3"},
+      {songTitle:"White Christmas (Dubstep Remix)",songArtist:"Iggy Pop",songDuration:"4:44",songUrl:"/xmas/albums/2015/15%20White%20Christmas%20(Dubstep%20Remix).mp3"},
+      {songTitle:"You Wont Have to Wait Till Xmas",songArtist:"Lee Rogers",songDuration:"2:28",songUrl:"/xmas/albums/2015/16%20You%20Wont%20Have%20to%20Wait%20Till%20Xmas.mp3"},
+      {songTitle:"When Christmas Comes",songArtist:"Los Campesinos!",songDuration:"3:51",songUrl:"/xmas/albums/2015/17%20When%20Christmas%20Comes.mp3"},
+      {songTitle:"Jingle Bells (Feat. The Puppini Sisters)",songArtist:"Michael Bublé",songDuration:"2:40",songUrl:"/xmas/albums/2015/18%20Jingle%20Bells%20(Feat.%20The%20Puppini%20Sisters).mp3"},
+      {songTitle:"The Christmas Song",songArtist:"PHOX",songDuration:"2:54",songUrl:"/xmas/albums/2015/19%20The%20Christmas%20Song.mp3"},
+      {songTitle:"8 Days of Hannukah",songArtist:"Sharon Jones & The Dap-Kings",songDuration:"3:43",songUrl:"/xmas/albums/2015/20%208%20Days%20of%20Hannukah.mp3"},
+      {songTitle:"Someday At Christmas",songArtist:"Stevie Wonder",songDuration:"2:49",songUrl:"/xmas/albums/2015/21%20Someday%20At%20Christmas.mp3"},
+      {songTitle:"I Don't Wanna Wait Til Christmas",songArtist:"Summer Camp",songDuration:"3:14",songUrl:"/xmas/albums/2015/22%20I%20Don't%20Wanna%20Wait%20Til%20Christmas.mp3"},
+      {songTitle:"Il Est Ne",songArtist:"Tom Tom Club",songDuration:"4:00",songUrl:"/xmas/albums/2015/23%20Il%20Est%20Ne.mp3"},
+      {songTitle:"Little Drummer Boy",songArtist:"Louis Bellson",songDuration:"6:37",songUrl:"/xmas/albums/2015/24%20Little%20Drummer%20Boy.mp3"}
     ]
   },
   {
     id: 2014,
     albumImage: "/xmas/images/2014/cover.jpeg",
     albumTitle: "#17: Xmas Card 2014: Fa La La La La La La La La",
+    albumDownloadUrl: "/mp3s/xmas/xmas_2014/2014.zip",
     songs: [
       {songTitle:"'Twas the Night Before Christmas",songArtist:"Jim Carter",songDuration:"3:32",songUrl:"/mp3s/xmas/xmas_2014/01%20'Twas%20the%20Night%20Before%20Christmas.mp3"},
       {songTitle:"White Winter Hymnal",songArtist:"Fleet Foxes",songDuration:"2:27",songUrl:"/mp3s/xmas/xmas_2014/02%20White%20Winter%20Hymnal.mp3"},
@@ -175,6 +178,7 @@ var data = [
     id: 2013,
     albumImage: "/xmas/images/2013/cover.jpeg",
     albumTitle: "#16: Xmas Card 2013: Sleigh the Season",
+    albumDownloadUrl: "/mp3s/xmas/xmas_2013/2013.zip",
     songs: [
       {songTitle:"Holiday I.D.",songArtist:"Lou Reed",songDuration:"0:29",songUrl:"/mp3s/xmas/xmas_2013/01%20Holiday%20I.D..mp3"},
       {songTitle:"Xmas In February",songArtist:"Lou Reed",songDuration:"2:58",songUrl:"/mp3s/xmas/xmas_2013/02%20Xmas%20In%20February.mp3"},
@@ -206,6 +210,7 @@ var data = [
     id: 2012,
     albumImage: "/xmas/images/2012/cover.jpeg",
     albumTitle: "#15: Xmas Card 2012: Christmastime Terror",
+    albumDownloadUrl: "/mp3s/xmas/xmas_2012/2012.zip",
     songs: [
       {songTitle:"Happy Fucking Holidays [Explicit]",songArtist:"Starfucker",songDuration:"4:16",songUrl:"/mp3s/xmas/xmas_2012/01%20Happy%20Fucking%20Holidays%20%5BExplicit%5D.mp3"},
       {songTitle:"Wonderful Christmastime",songArtist:"The Shins",songDuration:"2:27",songUrl:"/mp3s/xmas/xmas_2012/02%20Wonderful%20Christmastime.mp3"},

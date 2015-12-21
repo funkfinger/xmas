@@ -69,7 +69,7 @@ var AlbumModal = React.createClass({
       return(
         <li key={i}>
           <a href={song.songUrl}>
-            {song.songTitle}
+        {song.songTitle} / {song.songArtist} [{song.songDuration}]
           </a>
         </li>
       );

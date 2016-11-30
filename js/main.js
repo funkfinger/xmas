@@ -112,7 +112,7 @@ var AlbumModal = React.createClass({
 var data = [
   {
     id: 2015, 
-    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2015/cover.jpg2015/cover.jpg", 
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2015/cover.jpg", 
     albumTitle: "#18: Xmas Card 2015: JOY!",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2015/2015.zip",
     songs: [
@@ -144,7 +144,7 @@ var data = [
   },
   {
     id: 2014,
-    albumImage: "/xmas/images/2014/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2014/cover.jpeg",
     albumTitle: "#17: Xmas Card 2014: Fa La La La La La La La La",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2014/2014.zip",
     songs: [
@@ -176,7 +176,7 @@ var data = [
   },
   {
     id: 2013,
-    albumImage: "/xmas/images/2013/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2013/cover.jpeg",
     albumTitle: "#16: Xmas Card 2013: Sleigh the Season",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2013/2013.zip",
     songs: [
@@ -208,7 +208,7 @@ var data = [
   },
   {
     id: 2012,
-    albumImage: "/xmas/images/2012/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2012/cover.jpeg",
     albumTitle: "#15: Xmas Card 2012: Christmastime Terror",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2012/2012.zip",
     songs: [
@@ -240,7 +240,7 @@ var data = [
   },
   {
     id: 2011,
-    albumImage: "/xmas/images/2011/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2011/cover.jpeg",
     albumTitle: "#14: Xmas Card 2011: Christmas Bundle",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2011/2011.zip",
     songs: [
@@ -273,7 +273,7 @@ var data = [
   },
   {
     id: 2010,
-    albumImage: "/xmas/images/2010/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2010/cover.jpeg",
     albumTitle: "#14: Xmas Card 2010: Happy Ho-Ho Holidays",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2010/2010.zip",
     songs: [
@@ -310,7 +310,7 @@ var data = [
 
   {
     id: 2009,
-    albumImage: "/xmas/images/2009/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2009/cover.jpeg",
     albumTitle: "#12: Xmas Card 2009: Holiday Cane-ing",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2009/2009.zip",
     songs: [
@@ -344,7 +344,7 @@ var data = [
 
   {
     id: 2008,
-    albumImage: "/xmas/images/2008/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2008/cover.jpeg",
     albumTitle: "#14: Xmas Card 2008: Holiday Dance-y Dance",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2008/2008.zip",
     songs: [
@@ -379,7 +379,7 @@ var data = [
 
   {
     id: 2007,
-    albumImage: "/xmas/images/2007/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2007/cover.jpeg",
     albumTitle: "#10: Xmas Card 2007: Xmas Sweaters",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2007/2007.zip",
     songs: [
@@ -415,7 +415,7 @@ var data = [
 
   {
     id: 2006,
-    albumImage: "/xmas/images/2006/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2006/cover.jpeg",
     albumTitle: "#9: Xmas Card 2006: Hung like Ornaments",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2006/2006.zip",
     songs: [
@@ -451,7 +451,7 @@ var data = [
 
   {
     id: 2005,
-    albumImage: "/xmas/images/2005/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2005/cover.jpeg",
     albumTitle: "#8: Xmas Card 2005: Jingle Smells",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2005/2005.zip",
     songs: [
@@ -487,7 +487,7 @@ var data = [
 
   {
     id: 2004,
-    albumImage: "/xmas/images/2004/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2004/cover.jpeg",
     albumTitle: "#7: Xmas Card 2004: Santa's Little Helpers",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2004/2004.zip",
     songs: [
@@ -524,7 +524,7 @@ var data = [
 
   {
     id: 2003,
-    albumImage: "/xmas/images/2003/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2003/cover.jpeg",
     albumTitle: "#6: Xmas Card 2003: Songs for the Steakhouse",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2003/2003.zip",
     songs: [
@@ -558,7 +558,7 @@ var data = [
 
   {
     id: 2002,
-    albumImage: "/xmas/images/2002/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2002/cover.jpeg",
     albumTitle: "#5: Xmas Card 2002: Oh Christmas Tree",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2002/2002.zip",
     songs: [
@@ -590,7 +590,7 @@ var data = [
 
   {
     id: 2001,
-    albumImage: "/xmas/images/2001/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2001/cover.jpeg",
     albumTitle: "#4: Xmas Card 2001: A Christmas Odyssey",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2001/2001.zip",
     songs: [
@@ -622,7 +622,7 @@ var data = [
 
   {
     id: 2000,
-    albumImage: "/xmas/images/2000/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/2000/cover.jpeg",
     albumTitle: "#3: Xmas Card 2000: Another Fruitcake",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2000/2000.zip",
     songs: [
@@ -652,7 +652,7 @@ var data = [
 
   {
     id: 1999,
-    albumImage: "/xmas/images/1999/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/1999/cover.jpeg",
     albumTitle: "#2: Xmas Card 1999: Worse Than Fruitcake",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_1999/1999.zip",
     songs: [
@@ -684,7 +684,7 @@ var data = [
 
   {
     id: 1998,
-    albumImage: "/xmas/images/1998/cover.jpeg",
+    albumImage: "http://funkfinger.com.s3.amazonaws.com/xmas/images/1998/cover.jpeg",
     albumTitle: "#1: Xmas Card 1998: The Begining",
     albumDownloadUrl: "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_1998/1998.zip",
     songs: [

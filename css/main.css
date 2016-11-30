@@ -33,8 +33,7 @@ body {
 
 .jumbotron {
     /* add bootstrap jumbotron background image */
-    background-color: #df6500;
-    background-image: url("/img/jumbotron_background.jpg");
+    background-color: #CA0000;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right top;

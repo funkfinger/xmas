@@ -109,7 +109,50 @@ var AlbumModal = React.createClass({
   }
 });
 
+
+
+
+
+
+
+
+
+
+
 var data = [
+  {
+    "id": 2018,
+    "albumImage": "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/cover.jpg",
+    "albumTitle": "#21: Xmas Card 2018: Headbangin' Holidays",
+    "albumDownloadUrl": "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/2018.zip",
+    "songs": [
+      {songTitle:"Santa Claus Is Coming To Town",songArtist:"Dokken",songDuration:"4:01",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/01%20Santa%20Claus%20Is%20Coming%20To%20Town.mp3"},
+      {songTitle:"Ave Maria (Album Version)",songArtist:"The Cranberries",songDuration:"4:12",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/02%20Ave%20Maria%20%28Album%20Version%29.mp3"},
+      {songTitle:"Hey Sis, It's Christmas (feat. Markaholic)",songArtist:"RuPaul",songDuration:"3:11",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/03%20Hey%20Sis%2C%20It%27s%20Christmas%20%28feat.%20Markaholic%29.mp3"},
+      {songTitle:"All I Want for Christmas",songArtist:"MacY Gray",songDuration:"4:41",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/04%20All%20I%20Want%20for%20Christmas.mp3"},
+      {songTitle:"Bring The Snow",songArtist:"Sam Palladio",songDuration:"3:07",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/05%20Bring%20The%20Snow.mp3"},
+      {songTitle:"Count on Christmas",songArtist:"Bebe Rexha",songDuration:"3:00",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/06%20Count%20on%20Christmas.mp3"},
+      {songTitle:"Cozy Little Christmas (Amazon Original)",songArtist:"Katy Perry",songDuration:"3:03",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/07%20Cozy%20Little%20Christmas%20%28Amazon%20Original%29.mp3"},
+      {songTitle:"Mary's Boy Child / Oh My Lord",songArtist:"Boney M.",songDuration:"5:11",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/08%20Mary%27s%20Boy%20Child%20_%20Oh%20My%20Lord.mp3"},
+      {songTitle:"You Won't Love Me by Christmas",songArtist:"Miniature Tigers",songDuration:"3:23",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/09%20You%20Won%27t%20Love%20Me%20by%20Christmas.mp3"},
+      {songTitle:"A Five Pound Box of Money",songArtist:"Pearl Bailey",songDuration:"2:38",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/10%20A%20Five%20Pound%20Box%20of%20Money.mp3"},
+      {songTitle:"HoHoHo",songArtist:"Sia",songDuration:"3:26",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/11%20Ho%20Ho%20Ho.mp3"},
+      {songTitle:"I Am the Grinch",songArtist:"Tyler, The Creator feat. Fletcher Jones",songDuration:"2:38",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/12%20I%20Am%20the%20Grinch.mp3"},
+      {songTitle:"Tell Your Mama",songArtist:"Aloe Blacc",songDuration:"3:12",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/13%20Tell%20Your%20Mama.mp3"},
+      {songTitle:"Christmas (Baby Please Come Home)",songArtist:"Darlene Love",songDuration:"2:47",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/14%20Christmas%20%28Baby%20Please%20Come%20Home%29.mp3"},
+      {songTitle:"It's Christmas So We'll Stop",songArtist:"Frightened Rabbit",songDuration:"5:28",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/15%20It%27s%20Christmas%20So%20We%27ll%20Stop.mp3"},
+      {songTitle:"Christmas Time is (Coming 'Round Again)",songArtist:"The Mavericks",songDuration:"3:25",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/16%20Christmas%20Time%20is%20%28Coming%20%27Round%20Again%29.mp3"},
+      {songTitle:"Dance Of The Sugar Plum Fairy",songArtist:"Lindsey Stirling",songDuration:"2:39",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/17%20Dance%20Of%20The%20Sugar%20Plum%20Fairy.mp3"},
+      {songTitle:"Blue X-Mas",songArtist:"Bob Dorough",songDuration:"5:39",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/18%20Blue%20X-Mas.mp3"},
+      {songTitle:"Socks",songArtist:"JD McPherson",songDuration:"3:34",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/19%20Socks.mp3"},
+      {songTitle:"What Are You Doing New Year's Eve?",songArtist:"Ella Fitzgerald",songDuration:"3:32",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/20%20What%20Are%20You%20Doing%20New%20Year%27s%20Eve_.mp3"},
+      {songTitle:"Swingin' Dreidel",songArtist:"Kenny Ellis",songDuration:"3:16",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/21%20Swingin%27%20Dreidel.mp3"},
+      {songTitle:"Christmas Wrapping (with Iggy Pop)",songArtist:"Kylie Minogue",songDuration:"5:06",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/22%20Christmas%20Wrapping%20%28with%20Iggy%20Pop%29.mp3"},
+      {songTitle:"The Savior Is Born",songArtist:"The Staple Singers",songDuration:"2:11",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/23%20The%20Savior%20Is%20Born.mp3"},
+      {songTitle:"Winter Wooskie",songArtist:"Belle And Sebastian",songDuration:"2:42",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/24%20Winter%20Wooskie.mp3"},
+      {songTitle:"A Christmas to Remember",songArtist:"Dolly Parton & Kenny Rogers",songDuration:"3:39",songUrl:"http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2018/25%20A%20Christmas%20to%20Remember.mp3"},
+    ]
+  },
   {
     "id": 2017,
     "albumImage": "http://funkfinger.com.s3.amazonaws.com/xmas/albums/xmas_2017/cover.jpg",
